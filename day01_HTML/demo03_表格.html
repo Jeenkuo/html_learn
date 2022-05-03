@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <table border='1'
+                  width='200'>
+        <tr>
+            <th>学号</th>
+            <th>姓名</th>
+        </tr>
+        <tr>
+            <td>1001</td>
+            <td>李小四</td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <tr>
+            <th>姓名</th>
+            <th colspan="2">电话</th>
+            <th>备注</th>
+        </tr>
+        <tr>
+            <td>张小三</td>
+            <td>123456</td>
+            <td>abcdef</td>
+            <td>!@#$#$</td>
+        </tr>
+        <tr>
+            <td>李小四</td>
+            <td>123456</td>
+            <td>abcde</td>
+            <td>!@#$%</td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <tr>
+            <th rowspan="2">班级</th>
+            <!-- rowspan等于几就是该单元格向下拓展几行 -->
+            <th rowspan="2">姓名</th>
+            <th colspan="2">联系方式</th>
+            <!-- colspan等于几就是该单元个向右拓展几列 -->
+            <th rowspan="2">性别</th>
+        </tr>
+        <tr>
+            <th>电话</th>
+            <th>邮箱</th>
+        </tr>
+        <tr>
+            <td rowspan="3">一班</td>
+            <td>王小三</td>
+            <td>131***5857</td>
+            <td>yisl@qq.com</td>
+            <td>男</td>
+        </tr>
+        <tr>
+            <td>王小四</td>
+            <td>142***8789</td>
+            <td>uiyi@qq.com</td>
+            <td>男</td>
+        </tr>
+        <tr>
+            <td>张小芳</td>
+            <td>152***5687</td>
+            <td>xiaofang@qq.com</td>
+            <td>女</td>
+        </tr>
+        <tr>
+            <td rowspan="3">二班</td>
+            <td>刘小八</td>
+            <td>126***5478</td>
+            <td>lasde@qq.com</td>
+            <td>男</td>
+        </tr>
+        <tr>
+            <td>郭小美</td>
+            <td>145***5412</td>
+            <td>ciao@qq.com</td>
+            <td>女</td>
+        </tr>
+        <tr>
+            <td>吴美丽</td>
+            <td>147***8756</td>
+            <td>liu@qq.com</td>
+            <td>女</td>
+        </tr>
+    </table>
+</body>
+</html>

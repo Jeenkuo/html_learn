@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- action属性说明表单的数据提交的具体位置 -->
+    <form action="#"
+          method="POST">
+        <!-- 使用div元素表示表单控制的一行 -->
+        <div>
+            <label for="">用户名：</label>
+            <input type="text"
+                   name='username'
+                   placeholder="请输入用户名">
+        </div>
+        <div>
+            <label for="">密码：</label>
+            <input type="password"
+                   name='pws'>
+        </div>
+        <div>
+            <label for="">性别：</label>
+            <input type="radio" checked name='sex'>男
+            <input type="radio" name='sex'>女
+        </div>
+        <div>
+            <label for="">婚否：</label>
+            <input type="checkbox" name="mar">
+        </div>
+        <div>
+            <label for="">学历：</label>
+            <select name="edu" id="">
+                <option value="">请选择</option>
+                <option selected value="1">本科</option>
+                <option value="2">专科</option>
+            </select>
+        </div>
+        <div>
+            <label for="">简介：</label>
+            <textarea name="dem" 
+                      id="" 
+                      cols="30" 
+                      rows="10">
+            </textarea>
+        </div>
+        <div>
+            <input type="submit" value='提交一下'>
+            <input type="reset" value="重置一下">
+        </div>
+    </form>
+</body>
+</html>
