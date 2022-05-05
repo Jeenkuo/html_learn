@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /* 找到class值等于p2的元素 */
+    .p2{
+        color: cyan;
+    }
+    /* 制定p元素才能使用颜色是cyan的属性 */
+    p.p2{
+        color: red;
+    }
+    </style>
+</head>
+<body>
+    <div class="p2">今天</div>
+    <p id='p1'>明天</p>
+    <p>明天2</p>
+    <p>明天3</p>
+    <p class="p2">明天4</p>
+    <p class="p2">明天5</p>
+    <p>后天</p>
+</body>
+</html>

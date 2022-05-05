@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 后代选择器，同事选择中div和小div */
+        div div{
+            color: violet;
+        }
+        /* 子代选择器，只选择中div*/
+        div>div{
+            box-shadow:5px 5px red;
+        }
+    </style>
+</head>
+<body>
+    <div>大
+        <div>中
+            <div>小</div>
+        </div>
+    </div>
+</body>
+</html>
