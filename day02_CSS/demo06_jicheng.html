@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 使用内嵌的方式添加页面样式 -->
+    <style>
+        #a{
+            color: red;
+            background-color:blue ;
+            font-size: 32px;
+            border: solid 3px; color: cyan;
+        }
+        /* 子代选择器 */
+        #b>div{
+            color: blue;
+        }
+        #c{
+            color: blue;
+        }
+        .red{
+            color: red;
+        }
+        #d{
+            width: 200px;
+            background-color: orange;
+        }
+        #d>div{
+            width:80%;
+            background-color: aqua;
+        }
+        p{
+            width: 200px;
+            height: 200px;
+            border: solid 1px orange;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="a">1
+        <div>2
+            <div>3</div>
+        </div>
+        <div id="b">
+            <div>123</div>
+        </div>
+    </div>
+    <div id="c" class="red">张三丰</div>
+
+    <div id='c'>
+        <div class="c1"></div>
+        <div class="c2"></div>
+    </div>
+
+    <!-- 相对其父标签的尺寸 百分比的使用-->
+    <div id='d'>
+        <div>子元素</div>
+
+    </div>
+
+    <p>
+            从会议的内容来看，主要包括四个方面，分别是分析形势、统一思想、鼓舞信心、落实行动。
+
+            形势方面，会议强调，目前全球疫情仍处于高位，病毒还在不断变异，疫情的最终走向还存在很大不确定性，远没有到可以松口气、歇歇脚的时候。具体到我国的疫情防控形势，会议指出，我国疫情防控工作正处于“逆水行舟、不进则退”的关键时期和吃劲阶段。
+            
+            面对这样的形势和我国人口多、医疗资源总量不足的国情，会议提出要深刻、完整、全面认识党中央确定的疫情防控方针政策，这里面的三个关键词就是深刻、完整、全面。同时，会议还提出三个“坚决”：
+            
+            坚决克服认识不足、准备不足、工作不足等问题；
+            
+            坚决克服轻视、无所谓、自以为是等思想；
+            
+            坚决同一切歪曲、怀疑、否定我国防疫方针政策的言行作斗争。
+    </p>
+
+
+</body>
+</html>
