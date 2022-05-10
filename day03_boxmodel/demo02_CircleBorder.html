@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #test{
+            width: 0;
+            height: 0;
+            border: solid 10px black;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            display: inline-block;
+        }
+        #test2{
+            width: 200px;
+            height:200px;
+            border:solid 1px red;
+            /* 使用边框圆角属性实现角度的圆形效果 */
+            /* border-radius: 5px 20px 30px 40px; */
+            border-radius: 50%;            
+        }
+        img{
+            width: 167px;
+            height: 167px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="test"></div>
+
+    <div id="test2"></div>
+
+    <img src="../imgs/img02-3.png" alt="">
+</body>
+</html>
