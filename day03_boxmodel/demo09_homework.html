@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 使用内嵌的方式添加页面的样式 -->
+    <style>
+    /* 除掉浏览器默认的样式 */
+    ul{
+        margin: 0;
+        list-style-type: none;/*除掉实心的点*/
+        padding: 0;
+    }
+    span{
+        display: inline-block;
+    }
+    /* 找到最外围元素 */
+    #box{
+        border-top:solid 5px black;
+        border: solid #ccc 1px;
+        width: 375px;
+        padding: 0 15px;
+    }
+    #box.nav{
+        padding-top: 15px 0;
+    }
+    #box>.nav>span{
+        border: solid 1px #ccc;
+        padding: 5px 10px;
+    }
+    #box>ul>li{
+        border-bottom: solid 1px #ccc;
+        padding:10px 0;
+    }
+    #box>ul>li>span{
+        margin: 0 5px;
+        font-weight: 700;
+    }    
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="nav">
+            <span>今天</span>
+            <span>昨天</span>
+            <span>一周</span>
+        </div>
+        <ul>
+            <li>
+                <span>1</span>
+                上了飞机爱丽
+            </li>
+            <li>
+                <span>2</span>
+                发几款是罚款
+            </li>
+            <li>
+                <span>3</span>
+                经历十分骄傲
+            </li>
+            <li>
+                <span>4</span>
+                卡数据的合法
+            </li>
+            <li>
+                <span>5</span>
+                法开始的还是
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
