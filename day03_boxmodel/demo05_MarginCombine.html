@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 通过内嵌的方式编写眼上 -->
+    <style>
+        #p{
+            width: 300px;
+            height: 150px;
+            background-color: red;
+            margin-top: 30px;
+            padding-top: 10px ;            
+        }
+        #c{
+            width: 80px;
+            height:35px;
+            background-color:blue;
+            /* 与父元素margin属性合并，不产生效果，但当父元素加入padding属性后产生效果 */
+            margin-top:10px ; 
+        }
+    </style>
+</head>
+<body>
+    <div id="p">
+        <div id="c"></div>
+    </div>
+</body>
+</html>

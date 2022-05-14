@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+        /* 两个元素都有margin正值时，两个margin取大值为两个元素之间的距离 */
         .width48{
             width:48px;
             margin:10px 0;
@@ -16,9 +17,18 @@
         }
         div{
             background: blue;
-            color: white;            
+            color: black;            
             padding: 0px 10px;
-            border:solid 5px green;
+            border:solid 1px green;
+        }
+        #a{
+            margin-left: 30px;
+            /* 当两个元素的margin有一个负数时，为负数的向上移动 */
+            margin-top: -30px;
+            border: solid 1px red;
+            color:blueviolet;
+            background-color:yellow;
+            /* 文字和背景数据不同的层，文字可以覆盖文字，背景可以覆盖背景 */
         }
     </style>
 </head>
@@ -26,6 +36,6 @@
     <div class="width48">孙悟空</div>
     <div class="width48">猪八戒</div>
     <div class="width32">唐僧</div>
-    <div class="width48">沙悟净</div>
+    <div class="width48" id = "a">沙悟净</div>
 </body>
 </html>
