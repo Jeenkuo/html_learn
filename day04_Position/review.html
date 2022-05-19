@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width: 0;
+            height: 0;
+            border: solid 50px #000;
+            border-left-color: transparent;
+            border-bottom-color: transparent;
+            border-right-color: transparent;
+        }
+        img{
+            width: 167px;
+            height: 167px;
+            border-radius: 50%;
+        }
+        #a{
+            width: 200px;
+            border: solid 1px red;
+            height: 200px;
+            /* 使元素居中 */
+            margin: 0 auto;
+        }
+        span{
+            padding: 0px 10px;
+            border: solid 5px #333;
+        }
+    </style>
+</head>
+<body>
+    <!--  1.盒模型
+                元素宽度
+                内边距 padding:方向，没有负数
+                边框 border: style width color
+                    三角型
+                    圆形：border-radius
+                    轮廓线：outline
+                外边距
+                    margin：负数，没有背景色
+                    现象：兄弟间，包含严肃
+                                  合并的现象
+                背景和颜色
+                    img
+                    background-image 图片不经常变，小图片很多，合成为一张，作为背景
+                    平铺，位置，size
+                    -->
+    <div></div>
+    <img src="../imgs/img02-3.png" alt="">
+    <div id="a"></div>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>5</span>
+</body>
+</html>

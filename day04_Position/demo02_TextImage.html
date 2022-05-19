@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p,h3{
+            margin: 0;
+            padding:0;
+        }
+        #box,#box2{
+            width: 300px;
+            /* height: 450px; */
+            border: solid 1px black;
+            /* 将两个元素，依次按横向排列 */
+            float: left;
+        }
+        #box>img{
+            float:right;
+            margin:5px;
+        }
+        #box2{
+            margin:0 10px;
+            overflow: hidden;
+        }
+        #box2>.img{
+            float: left;
+            width: 90px;
+            margin: 5px;
+        }
+        #box2>p{
+            float: right;
+            width: 200px;
+        }
+        #box2>.img>img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="box">
+            <img src="../imgs/img02-3.png" alt="">
+            <p>
+                    据中央广播电视总台中国之声《新闻和报纸摘要》报道，总台央广记者从中国商飞公司获悉，
+                    14日6时52分，编号为B-001J的C919大飞机从浦东机场第4跑道起飞，于9时54分安全降落，
+                    标志着中国商飞公司即将交付首家用户的首架C919大飞机首次飞行试验圆满成功。
+            </p>
+        </div>
+        <div id="box2">
+                <div class="img">
+                    <img src="../imgs/img02-3.png" alt="">
+                    <h3>一个美女</h3>
+                </div>                
+                <p>
+                        据中央广播电视总台中国之声《新闻和报纸摘要》报道，总台央广记者从中国商飞公司获悉，
+                        14日6时52分，编号为B-001J的C919大飞机从浦东机场第4跑道起飞，于9时54分安全降落，
+                        标志着中国商飞公司即将交付首家用户的首架C919大飞机首次飞行试验圆满成功。
+                </p>                
+            </div>
+    </body>
+    </html>
+</body>
+</html>

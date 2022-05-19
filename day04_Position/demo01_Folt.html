@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 使用内嵌的方式编写页面样式 -->
+    <style>
+        #box{
+            border: solid 1px green;
+            /* 加入 <div style="clear:left;"></div>无需设置父元素高度 */
+            /* height: 122px; */
+            /* 将它包裹的浮动子元素可以完整包含住 */
+            overflow: hidden;/*如果父元素包含了浮动的子元素，父元素必须设置overflow: hidden*/
+        }
+        .div{
+            width: 120px;
+            height: 120px;
+            border: solid 1px red;
+            /* 在左侧方向依次排列 */
+            float: left;
+            /* 在右侧方向依次排列 */
+            /* float: right; */
+        }
+        p{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="div">1</div>
+        <div class="div">2</div>
+        <div class="div">3</div>
+        <!-- <div style="clear:left;"></div> -->
+    </div>    
+    <!-- 不影响p元素的显示而清除浮动 -->
+    <!-- <div style="clear:left; background-color: blueviolet;">4</div> -->
+    <p>张三锋</p>
+</body>
+</html>
