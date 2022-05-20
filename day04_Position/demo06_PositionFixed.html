@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 使用内嵌方式编写样式 -->
+    <style>
+    /* 除掉浏览器默认样式 */
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    #nav{
+        background-color: blue;
+        color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width:100%;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        /* 对超出内容部分允许包裹 */
+        overflow: hidden;
+        border:solid 1px black;
+    }
+    ul>li{
+        float:left;
+        padding:10px 20px;
+    }
+    /* 移动到上面变颜色 */
+    ul>li:hover{
+        background-color: red;
+    }
+    p{
+        margin-top: 43px;
+    }
+    #box{
+        width: 200px;
+        height: 200px;
+        border:solid 1px red;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
+    #box2{
+        width:200px;
+        height: 100px;
+        border: solid 1px red;
+        position: fixed;
+        top:50%;
+        margin-top: -50px;
+        left:50%;
+        margin-left: -100px;
+    }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <ul>
+            <li>首页</li>
+            <li>国际</li>
+            <li>国内</li>
+            <li>财经</li>
+            <li>军事</li>
+        </ul>
+    </div>
+    <!-- 为了产生滚动效果加入div -->
+    <p>张三丰</p>
+    <div style="height: 2000px;"></div>
+    <div id="box">
+
+    </div>
+    <div id="box2">
+
+    </div>
+</body>
+</html>

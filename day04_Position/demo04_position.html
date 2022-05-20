@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 使用内嵌的方式编写页面样式 -->
+    <style>
+        div{
+            width: 120px;
+            height:120px;
+            border: solid 1px red;
+            margin: 10px;
+        }
+        #d1{
+            position: relative;
+        }
+        #d2{
+            /* 原有位置保留 */
+            /* position: relative; */
+            /* 原有位置不保留,位置参照浏览器 */
+            position:absolute;
+            left:10px;
+            top:10px;
+            margin: 0px;
+            background-color: turquoise;
+        }
+    </style>
+</head>
+<body>
+    <!-- 添加三个有边框的正方形 -->
+    <div id="d1">
+            <!-- 父元素一般时相对定位，子元素一般时绝对定位 -->
+            <div id="d2"></div><!-- 只能参照有定位的父元素，父元素没有定位依然以浏览器为参照 -->
+    </div>    
+    <div></div>
+</body>
+</html>
