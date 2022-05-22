@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #p{
+            overflow: hidden;
+            position: relative;
+        }
+        .c{
+            float: left;
+        }
+        #bottom{
+            width: 100px;
+            height: 100px;
+            border: solid 1px red;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+        #center{
+            width: 100px;
+            height: 100px;
+            border: solid 1px red;
+            position: fixed;
+            right: 50%;
+            top: 50%;
+            margin-top: -50px;
+            margin-right: -50px ;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1.布局
+                默认布局，通过外边距进行微调
+                浮动布局，解决按列排的问题
+                    float：left/right
+                    clear：left/right 清除浮动
+                    父元素包裹浮动元素：overflow:hidden
+                定位布局，需要确定在具体位置显示，和浮动布局相比，定位布局的特征时元素相互覆盖。
+                    相对定位：position:relative;相对原来的位置偏移，使用偏移量属性解决位置 1.局部微调，2.做为包裹另外一绝对定位的参照元素
+                    绝对定位：position:absolute;相对于上一级定位元素的位置，脱离文档流，飘在页面上的效果。
+                    固定定位：position:fixed;参照物时浏览器.
+             -->
+    <div id="p">
+        <div class="c"></div>
+        <div class="c"></div>
+    </div>
+    <div id="bottom">
+
+    </div>
+    <div id="center">
+
+    </div>
+</body>
+</html>
