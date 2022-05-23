@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 分离绑定事件 
+                1.获取要绑定事件的元素:根据id属性值取元素节点
+                2.在元素节点上动态添加事件:使用点语法绑定事件名称
+            -->
+</head>
+<body>
+        <button id="btn">清空</button>
+        <script>
+             // 输出文字
+            document.write('张三丰');
+            //带有输出元素包裹的文字
+            document.write('<h3>张三丰</h3>')
+            //1找到id为btn的元素
+            document.getElementById('btn').onclick=function(){
+                //执行的代码
+                document.write("页面被清空了")
+            }
+        </script>
+</body>
+</html>
