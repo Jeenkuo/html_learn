@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 使用内嵌的方式编写JS代码 -->
+    <script>
+        if(!0){
+            // alert('我是条件成立时的弹框')
+        }//条件之后的代码
+        // alert('我是条件成立之后的弹框')
+        // 弹出一个接受数据的对话框
+        var str=prompt('请输入分数:','0');
+        //弹出你输入的值
+        // alert(str);
+        // if(isNaN(Number(str))){
+        //     alert('你输入的不是数字')
+        // }else{
+        //     alert('你输入的是数字')
+        // }
+        if(!isNaN(Number(str))){
+            //先将准数字字符转成数字,并保存在变量num中
+            var num=Number(str);
+            if(num<60){
+                alert('不及格')
+            }else if(num>=60 && num<80){
+                alert('比较优秀')
+            }else if(num>80 && num<90){
+                alert('很优秀')
+            }else if(num>90 && num<=100){
+                alert('最优秀')
+            }else{
+                alert('"请输入1-100之间的分数"')
+            }
+        }else{
+            alert('请输入正确的分数值')
+        }
+    </script>
+</body>
+</html>
