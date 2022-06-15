@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 122px;
+        }
+        #box>.img{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1.外围div宽度固定与图片一样
+           2. 获取到下面元素,并绑定单击事件,
+            3.在事件中,隐藏外围元素 -->
+    <div id="box">
+        <div>
+                <img src="../imgs/img02-5.png" alt="">
+        </div>
+        <div class="img">
+            <img id="img2" src="../imgs/img01-5.png" alt="">
+        </div>
+    </div>
+    <script>
+            document.getElementById("img2").onclick=function(){
+                    document.getElementById("box").style.display="none";
+            }            
+        </script>
+</body>
+</html>
