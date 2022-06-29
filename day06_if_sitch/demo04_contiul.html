@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+                var str=prompt('请输入计算结束的值',0);
+                //将保存的字符转成数值型
+                if(isNaN(Number(str))){
+                    alert('请输入一个正确的数字')
+                }else{
+                    //按输入值计算累加和
+                    var num=Number(str);
+                    //定义一个保存循环结果的变量
+                    var s=0;
+                    //使用for语句计算累加值
+                    for (var index = 1; index <=num; index++) {                        
+                        if(!(index%2==0)){
+                            continue;                           
+                        } 
+                         s=s+index;               
+                    }
+                    //显示循环结果值
+                    console.log(s);
+                }
+        
+            </script>
+</body>
+</html>
