@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li data-id="0">A</li>
+        <li data-id="1">B</li>
+        <li data-id="2">C</li>
+    </ul>
+    <script>
+        //获取全部的li节点对象,并保存在变量中
+        var lis=document.getElementsByTagName('li');
+        console.log(lis[0])
+        //使用便利的方式获取节点对象集合中每一项的内容
+        for(var i=0;i<lis.length;i++){
+            //console.log(lis[i])
+            //console.log(lis[i].getAttribute('data-id'))
+            lis[i].onclick=function(){
+                alert(this.getAttribute('data-id'));
+            }
+        }
+    </script>
+</body>
+</html>

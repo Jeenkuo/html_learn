@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 使用内嵌的方式编写js代码 -->
+    <script>
+        //1.定义一个函数
+        function outStr(str1,str2) {
+            //函数体
+            alert(str1);
+            console.log(str2);
+        }
+        function addNumber(num1,num2){
+            alert(num1);
+            alert(num2);
+            return num1+num2;
+        }
+        //2.调用函数名,执行函数体
+       // outStr('弹出','输出')
+        var s=addNumber(2,3);
+        console.log(s)
+    </script>
+</body>
+</html>

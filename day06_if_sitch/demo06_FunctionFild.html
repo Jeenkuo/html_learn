@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 使用内嵌的方式编写js代码 -->
+    <script>
+        //全局变量
+        var x=100;
+        function add() {
+            //局部变量
+            //var x=50;
+            //全局变量
+            x = 50;
+            console.log(x);
+        }
+        //调用add函数
+        add();
+        console.log(x);
+    </script>
+</body>
+</html>
