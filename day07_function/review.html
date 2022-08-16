@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a id="a"
+          href="http://www.baidu.com">百度</a>
+
+    <input  id="btn"
+                    type="button"
+                    
+                    value="测试一下">
+    <!-- 1.流程
+                1.1选择
+                        switch
+                1.2循环
+                        while不知道循环次数
+                        for 知道循环次数
+            2.函数
+                2.1定义
+                返回传入的两个数的和的函数
+                2.2调用
+                函数名(2,3)
+                2.3作用域
+
+                 -->
+    <script>
+        function add(x,y) {
+            var a;b=1;
+            return x+y;
+        }
+        
+        var a1=document.getElementById("a");
+        a1.setAttribute("href","http://news.sina.com.cn");
+
+        var btn=document.getElementById("btn");
+        btn.onclick=function(){
+            // this表示执行函数事件的元素
+            console.log("不可用了")
+            this.setAttribute("disabled","true")
+        }
+
+    </script>
+</body>
+</html>

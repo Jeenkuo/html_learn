@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    
     <ul>
         <li data-id="0">A</li>
         <li data-id="1">B</li>
@@ -17,13 +18,23 @@
         var lis=document.getElementsByTagName('li');
         console.log(lis[0])
         //使用便利的方式获取节点对象集合中每一项的内容
-        for(var i=0;i<lis.length;i++){
-            //console.log(lis[i])
-            //console.log(lis[i].getAttribute('data-id'))
-            lis[i].onclick=function(){
-                alert(this.getAttribute('data-id'));
-            }
+        // for(var i=0;i<lis.length;i++){
+        //     //console.log(lis[i])
+        //     //console.log(lis[i].getAttribute('data-id'))
+        //     lis[i].onclick=function(){
+        //         alert(this.getAttribute('data-id'));
+        //     }
+        // }
+        lis[0].onclick=function(){
+            alert(this.getAttribute('data-id'));
         }
+        lis[1].onclick=function(){
+            alert(this.getAttribute('data-id'));
+        }
+        lis[2].onclick=function(){
+            alert(this.getAttribute('data-id'));//getAttribute('attrname')通过属性名称获取属性值
+        }
+
     </script>
 </body>
 </html>
